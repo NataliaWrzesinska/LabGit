@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 
 if [ "$1" = "--date" ]
@@ -36,9 +37,9 @@ else
   exit 1
 fi
 
-
-
-
-
-
-
+if [[ $1 == "--help" ]]; then
+  echo "Available options:"
+  echo "--logs [number]: create [number] log files"
+  echo "--help: display this help message"
+  exit 0
+fi
