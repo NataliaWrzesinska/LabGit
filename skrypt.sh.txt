@@ -1,11 +1,8 @@
 <<<<<<< HEAD
 #!/bin/bash
 
-if [ "$1" = "--date" ]
-then
-  date +%Y-%m-%d
-else
-  echo "Użycie: $0 --date"
+if [[ $1 == "--date" ]]; then
+    date
 fi
 
 
@@ -42,4 +39,8 @@ if [[ $1 == "--help" ]]; then
   echo "--logs [number]: create [number] log files"
   echo "--help: display this help message"
   exit 0
+fi
+
+if [[ $1 == "-d" ]]; then
+    date
 fi
