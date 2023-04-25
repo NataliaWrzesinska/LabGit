@@ -53,3 +53,10 @@ if [[ $1 == "-l" ]]; then
         echo "data: $(date)" >> log${i}.txt
     done
 fi
+
+if [[ $1 == "-h" ]]; then
+  echo "Dostępne opcje:"
+  echo "-l [number]: create [number] log files"
+  echo "-h: wyświetl pomoc"
+  exit 0
+fi
