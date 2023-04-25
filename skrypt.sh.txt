@@ -60,3 +60,5 @@ if [[ $1 == "-h" ]]; then
   echo "-h: wyświetl pomoc"
   exit 0
 fi
+
+export PATH=$PATH:LabGit
