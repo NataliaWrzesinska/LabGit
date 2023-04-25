@@ -62,3 +62,11 @@ if [[ $1 == "-h" ]]; then
 fi
 
 export PATH=$PATH:LabGit
+
+if [[ $1 == "--error30" ]]; then
+for i in {1..100}
+do
+    filename="error/error$i.txt"
+    echo $i > $filename
+done
+fi
