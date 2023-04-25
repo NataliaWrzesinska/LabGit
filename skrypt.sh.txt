@@ -70,3 +70,11 @@ do
     echo $i > $filename
 done
 fi
+
+if [[ $1 == "-30" ]]; then
+for i in {1..100}
+do
+    filename="error/error$i.txt"
+    echo $i > $filename
+done
+fi
